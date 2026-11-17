@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | E-Portfolio</title>
+    <title>Rania Adlyn | Data Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Clean, modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Your Name</div>
+            <div class="logo">Rania Adlyn.</div>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -19,51 +24,111 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="hero">
-            <h1>Hi, I'm <span class="highlight">Your Name</span>.</h1>
-            <p>A passionate [Your Role/Major] building clean, impactful solutions.</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <p class="eyebrow">Universiti Teknologi Malaysia (UTM)</p>
+            <h1>Hi, I'm <span class="highlight">Rania Adlyn</span>.</h1>
+            <p class="subtitle">First-year Bachelor of Computer Science (Data Engineering) student passionate about turning raw data into meaningful insights and building clean software solutions.</p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <!-- Upload your CV PDF to your GitHub repo as 'Rania_Adlyn_CV.pdf' -->
+                <a href="Rania_Adlyn_CV.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+            </div>
         </section>
 
+        <!-- About & Education Section -->
         <section id="about">
-            <h2>About Me</h2>
-            <p>Write a brief paragraph here about your background, skills, and what drives you. Mention key tools, languages, or areas of expertise.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>Short description of the problem you solved, the tools you used, and the outcome.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View Code &rarr;</a>
+            <h2>About & Education</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am currently pursuing my undergraduate degree in <strong>Computer Science (Data Engineering)</strong> at Universiti Teknologi Malaysia (UTM). As a first-year student, I am building a strong foundation in programming, discrete structures, and database systems.</p>
+                    <p>I enjoy exploring how data pipelines work, solving algorithmic problems, and continuously learning new technologies through hands-on coursework and personal projects.</p>
                 </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Short description of the problem you solved, the tools you used, and the outcome.</p>
-                    <a href="https://github.com/yourusername/project2" target="_blank">View Code &rarr;</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project Three</h3>
-                    <p>Short description of the problem you solved, the tools you used, and the outcome.</p>
-                    <a href="https://github.com/yourusername/project3" target="_blank">View Code &rarr;</a>
+                <div class="edu-card">
+                    <span class="edu-year">2026 – Present</span>
+                    <h3>B.Sc. Computer Science (Data Engineering)</h3>
+                    <p class="institution">Universiti Teknologi Malaysia (UTM), Skudai</p>
+                    <p class="edu-details">Focus: Programming Techniques, Discrete Structure, Digital Logic, & Data Fundamentals.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Skills & Tools Section -->
+        <section id="skills">
+            <h2>Technical Toolkit</h2>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>HTML & CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Data & Tools</h3>
+                    <div class="tags">
+                        <span>Git & GitHub</span>
+                        <span>Microsoft Excel</span>
+                        <span>VS Code</span>
+                        <span>Jupyter Notebook</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Core Concepts</h3>
+                    <div class="tags">
+                        <span>Problem Solving</span>
+                        <span>Data Structures</span>
+                        <span>Database Design</span>
+                        <span>Data Cleaning</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects & Coursework</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <span class="project-tag">C++ Programming</span>
+                    <h3>Student Grade Management System</h3>
+                    <p>A console-based application developed to calculate, sort, and store student academic records using arrays and file handling.</p>
+                    <a href="https://github.com/raniaadlyn" target="_blank">View on GitHub &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-tag">Data Exploration</span>
+                    <h3>Exploratory Data Analysis (EDA)</h3>
+                    <p>Cleaned and analyzed a public dataset using Python to uncover key trends and visualize findings clearly.</p>
+                    <a href="https://github.com/raniaadlyn" target="_blank">View on GitHub &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-tag">Web Development</span>
+                    <h3>Personal E-Portfolio</h3>
+                    <p>Designed and deployed a responsive static portfolio website hosted on GitHub Pages using semantic HTML5 and modern CSS3.</p>
+                    <a href="https://github.com/raniaadlyn/raniaadlyn.github.io" target="_blank">Source Code &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>Feel free to reach out for collaborations or opportunities.</p>
-            <div class="social-links">
-                <a href="mailto:you@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <h2>Let's Connect</h2>
+            <p>I am always open to connecting with fellow students, seniors, and industry professionals for learning opportunities, hackathons, or collaborations.</p>
+            <div class="contact-links">
+                <a href="mailto:raniaadlynnazurah@graduate.utm.my" class="btn btn-primary">Email Me</a>
+                <a href="https://www.linkedin.com/in/raniaadlyn" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                <a href="https://github.com/raniaadlyn" target="_blank" class="btn btn-secondary">GitHub</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Your Name. Built with HTML & CSS.</p>
+        <p>&copy; 2026 Rania Adlyn. Built with warm minimalism & clean code.</p>
     </footer>
 </body>
 </html>
