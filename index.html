@@ -1,178 +1,709 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rania Adlyn | Data Engineering Portfolio</title>
+
+    <meta name="description" content="Rania Adlyn's academic and technical e-portfolio, showcasing projects, skills, university activities and achievements.">
+
     <link rel="stylesheet" href="style.css">
-    <!-- Soft, approachable modern fonts -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- NAVIGATION -->
     <header>
-        <nav>
-            <div class="logo">rania adlyn<span class="dot">.</span></div>
-            <ul>
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                rania adlyn<span>.</span>
+            </a>
+
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Journey</a></li>
+                <li><a href="#journey">Journey</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#artifacts">Artifacts</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
+
     <main>
-        <!-- Hero Section -->
-        <section id="hero">
+
+        <!-- 01. HERO SECTION -->
+        <section id="home" class="hero">
+
             <div class="status-pill">
                 <span class="pulse-dot"></span>
-                <span>B.Sc. Computer Science (Data Engineering) • UTM</span>
+                B.Sc. Computer Science (Data Engineering) • UTM
             </div>
-            <h1>Hi, I'm <span class="highlight">Rania Adlyn</span> <span class="sparkle">✦</span></h1>
-            <p class="subtitle">First-year Data Engineering undergraduate passionate about transforming raw datasets into meaningful insights, building clean analytical tools, and crafting thoughtful software solutions.</p>
-            
+
+            <p class="hero-greeting">WELCOME TO MY E-PORTFOLIO</p>
+
+            <h1>
+                Hi, I'm
+                <span class="highlight">Rania Adlyn</span>
+                <span class="sparkle">✦</span>
+            </h1>
+
+            <p class="subtitle">
+                First-year Data Engineering undergraduate passionate
+                about transforming raw datasets into meaningful insights,
+                building clean analytical tools, and crafting thoughtful
+                software solutions.
+            </p>
+
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Explore My Work</a>
-                <a href="Rania_Adlyn_CV.pdf" target="_blank" class="btn btn-secondary">Download CV ↗</a>
+
+                <a href="#projects" class="btn btn-primary">
+                    Explore My Work →
+                </a>
+
+                <a href="artifacts/Rania_Adlyn_CV.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-secondary">
+                    View My CV ↗
+                </a>
+
             </div>
+
+            <div class="hero-note">
+                <span>Curious mind.</span>
+                <span>Continuous learner.</span>
+                <span>Future Data Engineer.</span>
+            </div>
+
         </section>
 
-        <!-- About & Education Section -->
+
+        <!-- 02. ABOUT & EDUCATION -->
         <section id="about">
+
             <div class="section-header">
-                <span class="section-tag">01 / Profile</span>
-                <h2>About & Education</h2>
+                <span class="section-tag">01 / PROFILE</span>
+                <h2>About Me</h2>
+                <p class="section-description">
+                    A little introduction about who I am and what I study.
+                </p>
             </div>
+
             <div class="about-grid">
+
+                <!-- Profile Photo -->
+                <div class="profile-card">
+
+                    <img
+                        src="images/profile-photo.jpg"
+                        alt="Profile photo of Rania Adlyn"
+                        class="profile-image"
+                    >
+
+                    <p class="profile-caption">
+                        Rania Adlyn · UTM
+                    </p>
+
+                </div>
+
+
+                <!-- Introduction -->
                 <div class="about-text">
-                    <p>I am currently pursuing a <strong>Bachelor of Computer Science (Data Engineering)</strong> at Universiti Teknologi Malaysia (UTM). My academic focus centers on data modeling, structured programming, and database architecture.</p>
-                    <p>While early in my degree, I take a hands-on approach to learning—applying classroom concepts to real datasets, participating in tech communities, and building clean, documented repositories on GitHub.</p>
+
+                    <h3>Hello there!</h3>
+
+                    <p>
+                        I am currently pursuing a
+                        <strong>Bachelor of Computer Science
+                        (Data Engineering)</strong> at Universiti
+                        Teknologi Malaysia (UTM).
+                    </p>
+
+                    <p>
+                        My academic interests include data modelling,
+                        programming, database architecture and cloud
+                        computing.
+                    </p>
+
+                    <p>
+                        As a student, I believe in learning beyond
+                        the classroom through hands-on projects,
+                        technical workshops and collaboration with
+                        the computing community.
+                    </p>
+
+                    <p>
+                        My long-term goal is to become a Data Engineer
+                        and contribute to building useful data solutions.
+                    </p>
+
                 </div>
+
+
+                <!-- Education -->
                 <div class="edu-card">
-                    <span class="pill-badge">2026 – Present</span>
-                    <h3>B.Sc. Computer Science (Data Engineering)</h3>
-                    <p class="institution">Universiti Teknologi Malaysia (UTM), Skudai</p>
-                    <p class="edu-details">Relevant Coursework: Programming Technique I (C++), Discrete Structure, Digital Logic, & Technology and Information Systems.</p>
+
+                    <span class="pill-badge">
+                        2026 – Present
+                    </span>
+
+                    <h3>
+                        Bachelor of Computer Science
+                        (Data Engineering)
+                    </h3>
+
+                    <p class="institution">
+                        Universiti Teknologi Malaysia
+                    </p>
+
+                    <p class="edu-details">
+                        Skudai, Johor, Malaysia
+                    </p>
+
+                    <div class="edu-divider"></div>
+
+                    <h4>Relevant Coursework</h4>
+
+                    <ul class="course-list">
+                        <li>Programming Technique I (C++)</li>
+                        <li>Discrete Structure</li>
+                        <li>Digital Logic</li>
+                        <li>Technology and Information Systems</li>
+                    </ul>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Experience & Involvement (Makes a 1st-year look established) -->
-        <section id="experience">
+
+        <!-- 03. JOURNEY & INVOLVEMENT -->
+        <section id="journey">
+
             <div class="section-header">
-                <span class="section-tag">02 / Track Record</span>
-                <h2>Experience & Involvement</h2>
+                <span class="section-tag">02 / TRACK RECORD</span>
+                <h2>My Journey</h2>
+                <p class="section-description">
+                    Experiences, involvement and learning opportunities.
+                </p>
             </div>
+
             <div class="timeline">
+
                 <div class="timeline-item">
-                    <div class="timeline-date">2026 – Present</div>
-                    <div class="timeline-content">
-                        <h3>Active Member • PERSAKA (UTM Computing Student Association)</h3>
-                        <p>Collaborating with peers in technical workshops, coding bootcamps, and faculty-wide data and software initiatives.</p>
+
+                    <div class="timeline-date">
+                        2026 – Present
                     </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-category">
+                            UNIVERSITY INVOLVEMENT
+                        </span>
+
+                        <h3>
+                            Active Member · PERSAKA
+                        </h3>
+
+                        <p>
+                            UTM Computing Student Association.
+                            Participating in opportunities to connect
+                            with peers and explore the computing community.
+                        </p>
+
+                    </div>
+
                 </div>
+
+
                 <div class="timeline-item">
-                    <div class="timeline-date">2026</div>
-                    <div class="timeline-content">
-                        <h3>Data & Programming Lab Projects • UTM</h3>
-                        <p>Designed modular C++ programs and structured data workflows, emphasizing clean code documentation, edge-case testing, and version control.</p>
+
+                    <div class="timeline-date">
+                        2026 – Present
                     </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-category">
+                            TECHNICAL EXPOSURE
+                        </span>
+
+                        <h3>
+                            Technology Workshops & Industry Events
+                        </h3>
+
+                        <p>
+                            Exploring emerging technologies, cloud computing,
+                            artificial intelligence and data-related careers
+                            through technical events and industry talks.
+                        </p>
+
+                    </div>
+
                 </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        2026 – Present
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-category">
+                            ACADEMIC DEVELOPMENT
+                        </span>
+
+                        <h3>
+                            Computer Science Learning & Projects
+                        </h3>
+
+                        <p>
+                            Developing foundational programming skills,
+                            computational thinking and problem-solving
+                            through university coursework.
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </section>
 
-        <!-- Skills & Tools Section -->
+
+        <!-- 04. SKILLS -->
         <section id="skills">
+
             <div class="section-header">
-                <span class="section-tag">03 / Capabilities</span>
+                <span class="section-tag">03 / CAPABILITIES</span>
                 <h2>Technical Toolkit</h2>
+                <p class="section-description">
+                    Technologies and skills I am learning and developing.
+                </p>
             </div>
+
             <div class="skills-container">
+
                 <div class="skill-group">
-                    <h3>Languages & Querying</h3>
+
+                    <div class="skill-icon">⌨</div>
+
+                    <h3>Programming & Querying</h3>
+
                     <div class="tags">
                         <span>C++</span>
                         <span>Python</span>
                         <span>SQL</span>
-                        <span>HTML5 & CSS3</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
                     </div>
+
                 </div>
+
+
                 <div class="skill-group">
-                    <h3>Data & Environments</h3>
+
+                    <div class="skill-icon">⚙</div>
+
+                    <h3>Tools & Environments</h3>
+
                     <div class="tags">
-                        <span>Git & GitHub</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
                         <span>Jupyter Notebook</span>
                         <span>Microsoft Excel</span>
-                        <span>VS Code</span>
                     </div>
+
                 </div>
+
+
                 <div class="skill-group">
+
+                    <div class="skill-icon">✧</div>
+
                     <h3>Core Competencies</h3>
+
                     <div class="tags">
-                        <span>Data Cleaning & EDA</span>
-                        <span>Relational Databases</span>
-                        <span>Algorithmic Logic</span>
+                        <span>Problem Solving</span>
+                        <span>Data Cleaning</span>
+                        <span>Data Analysis</span>
+                        <span>Database Fundamentals</span>
                         <span>Technical Documentation</span>
                     </div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Projects Section -->
+
+        <!-- 05. PROJECTS -->
         <section id="projects">
+
             <div class="section-header">
-                <span class="section-tag">04 / Selected Work</span>
+                <span class="section-tag">04 / SELECTED WORK</span>
                 <h2>Featured Projects</h2>
+                <p class="section-description">
+                    A collection of my academic and personal projects.
+                </p>
             </div>
+
             <div class="project-grid">
+
+
+                <!-- PROJECT 1 -->
                 <div class="project-card">
-                    <div>
-                        <span class="project-tag">C++ • Systems Logic</span>
-                        <h3>Academic Record & Grade Analyzer</h3>
-                        <p>Built a structured console application to ingest, validate, and compute statistical summaries of student performance using file I/O and modular functions.</p>
+
+                    <img
+                        src="images/project-cpp.png"
+                        alt="C++ academic project screenshot"
+                        class="project-image"
+                    >
+
+                    <div class="project-info">
+
+                        <span class="project-tag">
+                            C++ · SYSTEMS LOGIC
+                        </span>
+
+                        <h3>
+                            Academic Record & Grade Analyzer
+                        </h3>
+
+                        <p>
+                            A structured console application designed
+                            to process student performance data,
+                            calculate grades and generate statistical
+                            summaries using modular functions.
+                        </p>
+
                     </div>
-                    <a href="https://github.com/raniaadlyn" target="_blank" class="card-link">View Repository &rarr;</a>
+
+                    <a
+                        href="https://github.com/raniaadlyn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-link">
+                        View Repository →
+                    </a>
+
                 </div>
 
+
+                <!-- PROJECT 2 -->
                 <div class="project-card">
-                    <div>
-                        <span class="project-tag">Python • Data Analysis</span>
-                        <h3>Exploratory Data Analysis (EDA)</h3>
-                        <p>Processed and cleaned raw CSV datasets to handle missing values, identify correlations, and present clear visual summaries.</p>
+
+                    <img
+                        src="images/project-python.png"
+                        alt="Python data analysis project screenshot"
+                        class="project-image"
+                    >
+
+                    <div class="project-info">
+
+                        <span class="project-tag">
+                            PYTHON · DATA ANALYSIS
+                        </span>
+
+                        <h3>
+                            Exploratory Data Analysis
+                        </h3>
+
+                        <p>
+                            Exploring datasets through data cleaning,
+                            handling missing values, identifying patterns
+                            and presenting findings through visualisations.
+                        </p>
+
                     </div>
-                    <a href="https://github.com/raniaadlyn" target="_blank" class="card-link">View Repository &rarr;</a>
+
+                    <a
+                        href="https://github.com/raniaadlyn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-link">
+                        View Repository →
+                    </a>
+
                 </div>
 
+
+                <!-- PROJECT 3 -->
                 <div class="project-card">
-                    <div>
-                        <span class="project-tag">Frontend • GitHub Pages</span>
-                        <h3>Personal E-Portfolio</h3>
-                        <p>Designed and deployed a responsive web portfolio using semantic HTML and custom CSS variables with a warm minimalist aesthetic.</p>
+
+                    <img
+                        src="images/project-portfolio.png"
+                        alt="Personal portfolio website screenshot"
+                        class="project-image"
+                    >
+
+                    <div class="project-info">
+
+                        <span class="project-tag">
+                            HTML · CSS · GITHUB PAGES
+                        </span>
+
+                        <h3>
+                            Personal E-Portfolio
+                        </h3>
+
+                        <p>
+                            Designed and developed a responsive
+                            personal website using HTML and CSS
+                            to showcase academic development,
+                            technical skills and achievements.
+                        </p>
+
                     </div>
-                    <a href="https://github.com/raniaadlyn/raniaadlyn.github.io" target="_blank" class="card-link">Source Code &rarr;</a>
+
+                    <a
+                        href="https://github.com/raniaadlyn/raniaadlyn.github.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-link">
+                        View Source Code →
+                    </a>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Contact Section -->
+
+        <!-- 06. ARTIFACTS & DOCUMENTS -->
+        <section id="artifacts">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    05 / ACADEMIC SHOWCASE
+                </span>
+
+                <h2>My Artifacts</h2>
+
+                <p class="section-description">
+                    Presentations, reports, certificates and other
+                    academic work that document my learning journey.
+                </p>
+
+            </div>
+
+
+            <div class="artifact-grid">
+
+
+                <!-- ARTIFACT 1 -->
+                <div class="artifact-card">
+
+                    <div class="artifact-top">
+                        <div class="artifact-icon">📊</div>
+                        <span class="artifact-type">PRESENTATION</span>
+                    </div>
+
+                    <div class="artifact-info">
+
+                        <h3>Industry Talk Presentation</h3>
+
+                        <p>
+                            Presentation slides highlighting key insights
+                            and knowledge gained from an industry talk.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="artifacts/industry-talk.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-link">
+                        View PDF →
+                    </a>
+
+                </div>
+
+
+                <!-- ARTIFACT 2 -->
+                <div class="artifact-card">
+
+                    <div class="artifact-top">
+                        <div class="artifact-icon">🎨</div>
+                        <span class="artifact-type">CANVA DESIGN</span>
+                    </div>
+
+                    <div class="artifact-info">
+
+                        <h3>Academic Infographic</h3>
+
+                        <p>
+                            A visual presentation of academic information
+                            using creative layouts and clear communication.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="artifacts/infographic.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-link">
+                        View PDF →
+                    </a>
+
+                </div>
+
+
+                <!-- ARTIFACT 3 -->
+                <div class="artifact-card">
+
+                    <div class="artifact-top">
+                        <div class="artifact-icon">📄</div>
+                        <span class="artifact-type">ACADEMIC REPORT</span>
+                    </div>
+
+                    <div class="artifact-info">
+
+                        <h3>Academic Report</h3>
+
+                        <p>
+                            A collection of academic reports and
+                            coursework demonstrating my understanding
+                            of computer science concepts.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="artifacts/academic-report.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-link">
+                        View PDF →
+                    </a>
+
+                </div>
+
+
+                <!-- ARTIFACT 4 -->
+                <div class="artifact-card">
+
+                    <div class="artifact-top">
+                        <div class="artifact-icon">🏆</div>
+                        <span class="artifact-type">CERTIFICATE</span>
+                    </div>
+
+                    <div class="artifact-info">
+
+                        <h3>Certificates & Achievements</h3>
+
+                        <p>
+                            Certificates from technical events,
+                            workshops and learning programmes.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="images/certificate-aws.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-link">
+                        View Certificate →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07. CONTACT -->
         <section id="contact">
+
             <div class="contact-box">
-                <h2>Let's work or learn together <span class="sparkle">✦</span></h2>
-                <p>Whether you're reaching out about internships, data projects, hackathons, or just want to connect at UTM, my inbox is always open.</p>
+
+                <span class="section-tag">
+                    06 / GET IN TOUCH
+                </span>
+
+                <h2>
+                    Let's connect and grow together
+                    <span class="sparkle">✦</span>
+                </h2>
+
+                <p>
+                    Whether you're interested in discussing technology,
+                    data projects, internship opportunities or simply
+                    connecting, feel free to reach out.
+                </p>
+
                 <div class="contact-links">
-                    <a href="mailto:raniaadlynnazurah@graduate.utm.my" class="btn btn-primary">Email Me</a>
-                    <a href="https://www.linkedin.com/in/raniaadlyn" target="_blank" class="btn btn-secondary">LinkedIn</a>
-                    <a href="https://github.com/raniaadlyn" target="_blank" class="btn btn-secondary">GitHub</a>
+
+                    <a
+                        href="mailto:raniaadlynnazurah@graduate.utm.my"
+                        class="btn btn-primary">
+                        Email Me
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/raniaadlyn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary">
+                        LinkedIn ↗
+                    </a>
+
+                    <a
+                        href="https://github.com/raniaadlyn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary">
+                        GitHub ↗
+                    </a>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-        <p>Crafted by Rania Adlyn • UTM Data Engineering • 2026</p>
+
+        <p>
+            Crafted by Rania Adlyn
+            <span class="footer-dot">✦</span>
+            UTM Data Engineering · 2026
+        </p>
+
+        <a href="#home" class="back-to-top">
+            Back to top ↑
+        </a>
+
     </footer>
+
 </body>
 </html>
