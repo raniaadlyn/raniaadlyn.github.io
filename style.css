@@ -433,7 +433,7 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* Quick Social & E-Portfolio Chips in Hero */
+/* Quick Social Chips in Hero */
 .hero-socials {
     display: flex;
     flex-wrap: wrap;
@@ -544,7 +544,7 @@ h2 {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1.15fr 1.05fr;
     gap: 2.5rem;
 
     align-items: start;
@@ -566,22 +566,6 @@ h2 {
 
 .about-text strong {
     color: var(--text-dark);
-}
-
-.honours-box {
-    margin-top: 1.5rem;
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-soft);
-    border-left: 4px solid var(--accent-soft);
-    border-radius: 16px;
-    padding: 1.3rem 1.5rem;
-    box-shadow: 0 4px 16px rgba(107, 76, 59, 0.04);
-}
-
-.honours-box h4 {
-    font-size: 0.9rem;
-    color: var(--accent-brown);
-    margin-bottom: 0.65rem;
 }
 
 .edu-card {
@@ -650,18 +634,50 @@ h2 {
 }
 
 .course-list li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.45rem;
 }
 
-.inline-link {
-    color: var(--accent-brown);
-    font-weight: 700;
-    text-decoration: none;
+.course-list strong {
+    color: var(--text-dark);
 }
 
-.inline-link:hover {
-    color: var(--accent-soft);
-    text-decoration: underline;
+/* Scrollable Experience & Volunteer Box */
+.scrollable-exp-box {
+    max-height: 175px;
+    overflow-y: auto;
+    padding-right: 0.65rem;
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    padding: 0.85rem 0.95rem 0.6rem 0.85rem;
+}
+
+.scrollable-exp-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-exp-box::-webkit-scrollbar-track {
+    background: var(--bg-latte);
+    border-radius: 999px;
+}
+
+.scrollable-exp-box::-webkit-scrollbar-thumb {
+    background: var(--accent-soft);
+    border-radius: 999px;
+}
+
+.scrollable-exp-box::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-brown);
+}
+
+.scrollable-exp-box .course-list li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.scrollable-exp-box .course-list li span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
 
 
@@ -1018,6 +1034,10 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1.25fr;
     border-bottom: 1px solid var(--border-soft);
+}
+
+.detail-top-grid.no-reflection {
+    border-bottom: none;
 }
 
 .detail-photo-wrapper {
