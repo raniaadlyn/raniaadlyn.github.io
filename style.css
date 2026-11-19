@@ -319,6 +319,7 @@ h2 {
 
     aspect-ratio: 4 / 5;
     object-fit: cover;
+    object-position: center top;
 
     border-radius: 18px;
     border: 1px solid var(--border-soft);
