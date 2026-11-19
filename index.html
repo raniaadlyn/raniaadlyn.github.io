@@ -40,73 +40,99 @@
     <header>
         <nav class="navbar">
 
-            <a href="#home" class="logo">
+            <a href="#home" class="logo" onclick="showMainView()">
                 rania adlyn<span>.</span>
             </a>
 
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#artifacts">Artifacts</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" onclick="showMainView()">About</a></li>
+                <li><a href="#journey" onclick="showMainView()">Journey</a></li>
+                <li><a href="#skills" onclick="showMainView()">Skills</a></li>
+                <li><a href="#projects" onclick="showMainView()">Projects</a></li>
+                <li><a href="#artifacts" onclick="showMainView()">Artifacts</a></li>
+                <li><a href="#contact" onclick="showMainView()">Contact</a></li>
             </ul>
 
         </nav>
     </header>
 
 
-    <main>
+    <!-- =========================================
+         MAIN PORTFOLIO VIEW
+    ========================================= -->
+    <main id="main-portfolio">
 
-        <!-- HERO SECTION -->
+        <!-- COMBINED HERO & PROFILE SECTION -->
         <section id="home" class="hero">
 
-            <div class="status-pill">
-                <span class="pulse-dot"></span>
-                B.Sc. Computer Science (Data Engineering) • UTM
-            </div>
+            <div class="hero-grid">
 
-            <p class="hero-greeting">WELCOME TO MY E-PORTFOLIO</p>
+                <!-- Left Column: Welcome & Intro -->
+                <div class="hero-content">
 
-            <h1>
-                Hi, I'm
-                <span class="highlight">Rania Adlyn</span>
-                <span class="sparkle">✦</span>
-            </h1>
+                    <div class="status-pill">
+                        <span class="pulse-dot"></span>
+                        B.Sc. Computer Science (Data Engineering) • UTM
+                    </div>
 
-            <p class="subtitle">
-                First-year Computer Science (Data Engineering) undergraduate passionate
-                about transforming raw datasets into meaningful insights,
-                building clean analytical tools, and crafting thoughtful
-                software solutions.
-            </p>
+                    <p class="hero-greeting">WELCOME TO MY E-PORTFOLIO</p>
 
-            <div class="hero-buttons">
+                    <h1>
+                        Hi, I'm
+                        <span class="highlight">Rania Adlyn</span>
+                        <span class="sparkle">✦</span>
+                    </h1>
 
-                <a href="#projects" class="btn btn-primary">
-                    Explore My Work →
-                </a>
+                    <p class="subtitle">
+                        First-year Data Engineering undergraduate passionate
+                        about transforming raw datasets into meaningful insights,
+                        building clean analytical tools, and crafting thoughtful
+                        software solutions.
+                    </p>
 
-                <a href="artifacts/Rania_Adlyn_CV.pdf"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="btn btn-secondary">
-                    View My CV ↗
-                </a>
+                    <div class="hero-buttons">
 
-            </div>
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work →
+                        </a>
 
-            <div class="hero-note">
-                <span>Curious mind.</span>
-                <span>Continuous learner.</span>
-                <span>Future Data Engineer.</span>
+                        <a href="artifacts/Rania_Adlyn_CV.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-secondary">
+                            View My CV ↗
+                        </a>
+
+                    </div>
+
+                    <div class="hero-note">
+                        <span>Curious mind.</span>
+                        <span>Continuous learner.</span>
+                        <span>Future Data Engineer.</span>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Profile Photo -->
+                <div class="hero-profile">
+                    <div class="profile-frame">
+                        <img
+                            src="images/6334393093460791887.jpg"
+                            alt="Profile photo of Rania Adlyn"
+                            class="profile-image"
+                        >
+                        <div class="profile-float-badge">
+                            <span>✦</span> Rania Adlyn · UTM
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </section>
 
 
-        <!-- ABOUT & EDUCATION -->
+        <!-- ABOUT & EDUCATION (BALANCED 2-COLUMN LAYOUT) -->
         <section id="about">
 
             <div class="section-header">
@@ -118,22 +144,6 @@
             </div>
 
             <div class="about-grid">
-
-                <!-- Profile Photo -->
-                <div class="profile-card">
-
-                    <img
-                        src="images/6334393093460791887.jpg"
-                        alt="Profile photo of Rania Adlyn"
-                        class="profile-image"
-                    >
-
-                    <p class="profile-caption">
-                        Rania Adlyn · UTM
-                    </p>
-
-                </div>
-
 
                 <!-- Introduction -->
                 <div class="about-text">
@@ -409,7 +419,7 @@
         </section>
 
 
-        <!-- ARTIFACTS & DOCUMENTS -->
+        <!-- ARTIFACTS DIRECTORY -->
         <section id="artifacts">
 
             <div class="section-header">
@@ -421,8 +431,7 @@
                 <h2>My Artifacts</h2>
 
                 <p class="section-description">
-                    Presentations, infographics, certificates and other
-                    academic work that document my learning journey.
+                    Click any category below to explore my presentations, visits, videos, certificates, and coursework.
                 </p>
 
             </div>
@@ -430,95 +439,99 @@
 
             <div class="artifact-grid">
 
-
-                <!-- ARTIFACT 1 -->
-                <div class="artifact-card">
-
-                    <div class="artifact-top">
-                        <div class="artifact-icon">📊</div>
-                        <span class="artifact-type">PRESENTATION</span>
-                    </div>
-
-                    <div class="artifact-info">
-
-                        <h3>Industry Talk Presentation</h3>
-
-                        <p>
-                            Presentation slides highlighting key insights
-                            and knowledge gained from an industry talk.
-                        </p>
-
-                    </div>
-
-                    <a
-                        href="artifacts/industry-talk.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="card-link">
-                        View PDF →
-                    </a>
-
-                </div>
-
-
-                <!-- ARTIFACT 2 (PUBLIC HEALTH ENGLAND INFOGRAPHIC) -->
-                <div class="artifact-card">
-
+                <!-- 1. DESIGN THINKING AND FIGMA -->
+                <div class="artifact-card" onclick="openArtifactCategory('design-thinking')">
                     <div class="artifact-top">
                         <div class="artifact-icon">🎨</div>
-                        <span class="artifact-type">ACADEMIC INFOGRAPHIC</span>
+                        <span class="artifact-type">UI/UX &amp; PROTOTYPING</span>
                     </div>
-
                     <div class="artifact-info">
-
-                        <h3>Public Health England Case Study</h3>
-
+                        <h3>Design Thinking and Figma</h3>
                         <p>
-                            Data engineering case study infographic analysing the
-                            2020 COVID-19 Excel row-limit failure, pipeline lifecycle
-                            stages, and automated record count validation.
+                            Empathy mapping, problem framing, wireframes, and interactive prototypes created in Figma.
                         </p>
-
                     </div>
-
-                    <a
-                        href="artifacts/S04-G10_Topic3_PublicHealthEngland.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="card-link">
-                        View PDF →
-                    </a>
-
+                    <span class="card-link">Explore Section →</span>
                 </div>
 
 
-                <!-- ARTIFACT 3 -->
-                <div class="artifact-card">
+                <!-- 2. INDUSTRY TALK -->
+                <div class="artifact-card" onclick="openArtifactCategory('industry-talk')">
+                    <div class="artifact-top">
+                        <div class="artifact-icon">🎙️</div>
+                        <span class="artifact-type">SEMINARS &amp; TALKS</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h3>Industry Talk</h3>
+                        <p>
+                            Key takeaways, session photos, and reflection reports from Industry Talk 1 and Industry Talk 2.
+                        </p>
+                    </div>
+                    <span class="card-link">View Talks →</span>
+                </div>
 
+
+                <!-- 3. INDUSTRY VISIT -->
+                <div class="artifact-card" onclick="openArtifactCategory('industry-visit')">
+                    <div class="artifact-top">
+                        <div class="artifact-icon">🏢</div>
+                        <span class="artifact-type">FIELD EXPOSURE</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h3>Industry Visit</h3>
+                        <p>
+                            Photos, real-world tech insights, and visit summaries from Industry Visit 1 and Industry Visit 2.
+                        </p>
+                    </div>
+                    <span class="card-link">View Visits →</span>
+                </div>
+
+
+                <!-- 4. DATA ENGINEERING LIFECYCLE VIDEO -->
+                <div class="artifact-card" onclick="openArtifactCategory('lifecycle-video')">
+                    <div class="artifact-top">
+                        <div class="artifact-icon">🎬</div>
+                        <span class="artifact-type">MULTIMEDIA</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h3>Data Engineering Lifecycle Video</h3>
+                        <p>
+                            Video presentation explaining data generation, storage, ingestion, transformation, and serving.
+                        </p>
+                    </div>
+                    <span class="card-link">Watch &amp; View →</span>
+                </div>
+
+
+                <!-- 5. CERTIFICATES -->
+                <div class="artifact-card" onclick="openArtifactCategory('certificates')">
                     <div class="artifact-top">
                         <div class="artifact-icon">🏆</div>
-                        <span class="artifact-type">CERTIFICATE</span>
+                        <span class="artifact-type">ACHIEVEMENTS</span>
                     </div>
-
                     <div class="artifact-info">
-
-                        <h3>Certificates &amp; Achievements</h3>
-
+                        <h3>Certificates</h3>
                         <p>
-                            Certificates from technical events,
-                            workshops and learning programmes.
+                            Certificates earned from technical workshops, industry events, and learning programmes.
                         </p>
-
                     </div>
+                    <span class="card-link">View Certificates →</span>
+                </div>
 
-                    <a
-                        href="images/certificate-aws.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="card-link">
-                        View Certificate →
-                    </a>
 
+                <!-- 6. COURSE HOMEWORK -->
+                <div class="artifact-card" onclick="openArtifactCategory('course-homework')">
+                    <div class="artifact-top">
+                        <div class="artifact-icon">📚</div>
+                        <span class="artifact-type">COURSEWORK</span>
+                    </div>
+                    <div class="artifact-info">
+                        <h3>Course Homework</h3>
+                        <p>
+                            Academic assignments and case studies, including the Public Health England Case Study.
+                        </p>
+                    </div>
+                    <span class="card-link">View Homework →</span>
                 </div>
 
             </div>
@@ -579,6 +592,34 @@
     </main>
 
 
+    <!-- =========================================
+         ARTIFACT DETAIL SUB-PAGE VIEW
+         (Opens when any Artifact category is clicked)
+    ========================================= -->
+    <main id="artifact-detail-view" class="detail-view hidden">
+
+        <section class="detail-section">
+
+            <button type="button" class="btn btn-secondary back-btn" onclick="showMainView()">
+                ← Back to Portfolio
+            </button>
+
+            <div class="section-header detail-header">
+                <span id="detail-tag" class="section-tag">CATEGORY</span>
+                <h2 id="detail-title">Section Title</h2>
+                <p id="detail-description" class="section-description">
+                    Section description goes here.
+                </p>
+            </div>
+
+            <!-- Dynamic Cards & Photos Container -->
+            <div id="detail-items-grid" class="detail-grid"></div>
+
+        </section>
+
+    </main>
+
+
     <!-- FOOTER -->
     <footer>
 
@@ -588,11 +629,167 @@
             UTM Data Engineering · 2026
         </p>
 
-        <a href="#home" class="back-to-top">
+        <a href="#home" class="back-to-top" onclick="showMainView()">
             Back to top ↑
         </a>
 
     </footer>
+
+
+    <!-- =========================================
+         SUB-PAGE DATA & NAVIGATION SCRIPT
+         (Edit your photos, titles, and PDF links here!)
+    ========================================= -->
+    <script>
+        const artifactData = {
+            'design-thinking': {
+                tag: 'UI/UX & PROTOTYPING',
+                title: 'Design Thinking and Figma',
+                description: 'Design thinking process, user research, wireframes, and interactive prototypes.',
+                items: [
+                    {
+                        badge: 'PROJECT 01',
+                        title: 'Design Thinking & Figma Prototype',
+                        image: 'images/design-thinking-1.jpg',
+                        caption: 'Empathy map, user persona, and Figma wireframe showcase.',
+                        linkText: 'View Report / Prototype →',
+                        linkUrl: 'artifacts/design-thinking.pdf'
+                    }
+                ]
+            },
+            'industry-talk': {
+                tag: 'SEMINARS & TALKS',
+                title: 'Industry Talk',
+                description: 'Highlights, photos, and reflection reports from industry sharing sessions.',
+                items: [
+                    {
+                        badge: 'SESSION 01',
+                        title: 'Industry Talk 1',
+                        image: 'images/industry-talk-1.jpg',
+                        caption: 'Session photo and key insights gained during Industry Talk 1.',
+                        linkText: 'View Talk 1 PDF →',
+                        linkUrl: 'artifacts/industry-talk-1.pdf'
+                    },
+                    {
+                        badge: 'SESSION 02',
+                        title: 'Industry Talk 2',
+                        image: 'images/industry-talk-2.jpg',
+                        caption: 'Session photo and reflection summary from Industry Talk 2.',
+                        linkText: 'View Talk 2 PDF →',
+                        linkUrl: 'artifacts/industry-talk-2.pdf'
+                    }
+                ]
+            },
+            'industry-visit': {
+                tag: 'FIELD EXPOSURE',
+                title: 'Industry Visit',
+                description: 'On-site industry visits, workplace tours, and real-world engineering exposure.',
+                items: [
+                    {
+                        badge: 'VISIT 01',
+                        title: 'Industry Visit 1',
+                        image: 'images/industry-visit-1.jpg',
+                        caption: 'Group photo and key learnings during Industry Visit 1.',
+                        linkText: 'View Visit 1 Report →',
+                        linkUrl: 'artifacts/industry-visit-1.pdf'
+                    },
+                    {
+                        badge: 'VISIT 02',
+                        title: 'Industry Visit 2',
+                        image: 'images/industry-visit-2.jpg',
+                        caption: 'Memorable moments and technical insights from Industry Visit 2.',
+                        linkText: 'View Visit 2 Report →',
+                        linkUrl: 'artifacts/industry-visit-2.pdf'
+                    }
+                ]
+            },
+            'lifecycle-video': {
+                tag: 'MULTIMEDIA PRESENTATION',
+                title: 'Data Engineering Lifecycle Video',
+                description: 'Visual explanation of the end-to-end Data Engineering Lifecycle.',
+                items: [
+                    {
+                        badge: 'VIDEO PROJECT',
+                        title: 'Data Engineering Lifecycle Explained',
+                        image: 'images/lifecycle-video-thumb.jpg',
+                        caption: 'Covering Generation, Storage, Ingestion, Transformation, and Serving.',
+                        linkText: 'Watch Video ↗',
+                        linkUrl: 'https://youtu.be/'
+                    }
+                ]
+            },
+            'certificates': {
+                tag: 'ACHIEVEMENTS & RECOGNITION',
+                title: 'Certificates',
+                description: 'Certificates from workshops, technical events, and academic programmes.',
+                items: [
+                    {
+                        badge: 'CERTIFICATE 01',
+                        title: 'AWS / Cloud Workshop Certificate',
+                        image: 'images/certificate-aws.png',
+                        caption: 'Certificate of participation and completion.',
+                        linkText: 'View Full Certificate ↗',
+                        linkUrl: 'images/certificate-aws.png'
+                    }
+                ]
+            },
+            'course-homework': {
+                tag: 'ACADEMIC COURSEWORK',
+                title: 'Course Homework',
+                description: 'Assignments, case studies, and coursework completed during my degree.',
+                items: [
+                    {
+                        badge: 'CASE STUDY · S04-G10',
+                        title: 'Public Health England Case Study',
+                        image: 'images/phe-case-study-preview.png',
+                        caption: 'Data engineering case study infographic analysing the 2020 COVID-19 Excel row-limit failure, pipeline lifecycle stages, and automated record count validation.',
+                        linkText: 'View PDF →',
+                        linkUrl: 'artifacts/S04-G10_Topic3_PublicHealthEngland.pdf'
+                    }
+                ]
+            }
+        };
+
+        function openArtifactCategory(categoryKey) {
+            const category = artifactData[categoryKey];
+            if (!category) return;
+
+            document.getElementById('detail-tag').textContent = category.tag;
+            document.getElementById('detail-title').textContent = category.title;
+            document.getElementById('detail-description').textContent = category.description;
+
+            const grid = document.getElementById('detail-items-grid');
+            grid.innerHTML = category.items.map(item => `
+                <div class="detail-item-card">
+                    <div class="detail-photo-wrapper">
+                        <img
+                            src="${item.image}"
+                            alt="${item.title}"
+                            class="detail-photo"
+                            onerror="this.src='https://placehold.co/800x500/F5ECE4/6B4C3B?text=${encodeURIComponent(item.title)}'"
+                        >
+                    </div>
+                    <div class="detail-item-body">
+                        <span class="timeline-category">${item.badge}</span>
+                        <h3>${item.title}</h3>
+                        <p>${item.caption}</p>
+                        <a href="${item.linkUrl}" target="_blank" rel="noopener noreferrer" class="card-link">
+                            ${item.linkText}
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('main-portfolio').classList.add('hidden');
+            document.getElementById('artifact-detail-view').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showMainView() {
+            document.getElementById('artifact-detail-view').classList.add('hidden');
+            document.getElementById('main-portfolio').classList.remove('hidden');
+        }
+    </script>
 
 </body>
 </html>
